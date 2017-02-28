@@ -1,0 +1,211 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+  &__top {
+    width: 100%;
+    min-height: 38px;
+    background: #f2f2f2;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 230px;
+    color: #393939;
+    overflow: hidden;
+
+    &-sign {
+      width: 10px;
+      height: 10px;
+      margin-right: 19px;
+    }
+
+    &-number {
+      font-size: 11px;
+      line-height: 1.64;
+    }
+  }
+
+  &__control {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 730px;
+
+    &-item {
+      position: relative;
+      padding: 0 33px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        right: 0;
+        width: 1px;
+        height: 11px;
+        background: #525252;
+      }
+
+      &:last-child {
+        padding-right: 3px;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    &-link {
+      font-size: 11px;
+      line-height: 1.64;
+      color: #393939;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    min-height: 128px;
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 43px 0 20px;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 360px;
+    margin-left: 4px;
+
+    &-item {
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-link {
+      font-size: 18px;
+      line-height: 1;
+      font-family: "Playfair Display";
+      font-style: italic;
+      color: #000;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    left: 460px;
+    width: 400px;
+    height: 128px;
+    padding-top: 32px;
+    font-size: 72px;
+    line-height: 1;
+    font-family: "Krinkes Decor Personal Use";
+    color: #000;
+    text-align: center;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -120px;
+      left: 0;
+      border: 200px solid transparent;
+      border-bottom: 60px solid transparent;
+      border-top: 60px solid #fff;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 230px;
+    margin-right: 52px;
+
+    &-item {
+      margin-right: 12px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-link, &-sign {
+      color: #d9bf8f;
+
+      :hover {
+        color: darken(#d9bf8f, 10%)
+      }
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 34px;
+      border: 2px solid #d9bf8f;
+      border-radius: 50%;
+
+      &:hover {
+        border-color: darken(#d9bf8f, 10%);
+      }
+    }
+  }
+
+  &__select {
+    position: relative;
+
+    &-chevron {
+      position: absolute;
+      top: 8px;
+      right: 5px;
+      color: #fff;
+    }
+
+    &-money {
+      width: 110px;
+      height: 35px;
+      padding-left: 10px;
+      margin-right: 1px;
+      font-size: 12px;
+      line-height: 1.5;
+      font-weight: 700;
+      background: #000;
+      border: 1px solid #000;
+      color: #fff;
+      appearance: none;
+      text-transform: uppercase;
+    }
+  }
+}
