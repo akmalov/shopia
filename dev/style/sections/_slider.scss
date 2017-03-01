@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 140px 0 34px;
+    padding: 140px 0 30px;
   }
 
   &__content {
@@ -17,6 +17,7 @@
     align-items: center;
     width: 277px;
     height: 277px;
+    margin-bottom: 55px;
     border: 3px solid #fff;
     border-radius: 4px;
 
@@ -27,7 +28,7 @@
       justify-content: space-between;
       width: 259px;
       height: 259px;
-      padding: 28px 30px 30px;
+      padding: 26px 30px 30px;
       border: 1px solid #fff;
       border-radius: 2px;
       line-height: 1;
@@ -42,6 +43,7 @@
   }
 
   &__title {
+    margin-bottom: 4px;
     font-size: 60px;
     font-weight: 700;
     color: #000;
@@ -52,17 +54,101 @@
     font-size: 20px;
     color: #fff;
 
-    &:before, &:after {
-      content: '';
+    &-left, &-right {
       position: absolute;
+      top: 8px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        background: #fff;
+      }
+
+      &:before {
+        top: 0;
+        width: 33px;
+      }
+
+      &:after {
+        top: 8px;
+        width: 60px;
+      }
     }
 
-    &:before {
+    &-left {
+      left: -13px;
 
+      &:before, &:after {
+        right: 0;
+      }
+    }
+
+    &-right {
+      right: -13px;
+
+      &:before, &:after {
+        left: 0;
+      }
     }
   }
 
   &__off {
     font-size: 30px;
+  }
+
+  &__btn {
+    margin-bottom: 113px;
+
+    &-link {
+      display: block;
+      height: 53px;
+      padding: 10px 32px 5px 26px;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      background: #f09d66;
+      text-transform: uppercase;
+
+      &:hover {
+        background: darken(#f09d66, 10%);
+      }
+    }
+  }
+
+  &__toggles {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-item {
+      margin-right: 12px;
+
+      &_active {
+
+        .slider__toggles-link {
+          background: #000;
+
+          &:hover {
+            background: #000;
+          }
+        }
+      }
+    }
+
+    &-link {
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: #b2b2b2;
+      transform: rotate(45deg);
+
+      &:hover {
+        background: darken(#b2b2b2, 10%);
+      }
+    }
   }
 }
