@@ -20,13 +20,13 @@
   &__phone {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     max-width: 230px;
     color: #393939;
     overflow: hidden;
 
     &-sign {
-      width: 10px;
-      height: 10px;
+      font-size: 10px;
       margin-right: 19px;
     }
 
@@ -188,13 +188,14 @@
 
     &-chevron {
       position: absolute;
-      top: 8px;
-      right: 5px;
+      top: 11px;
+      right: 11px;
+      font-size: 8px;
       color: #fff;
     }
 
     &-money {
-      width: 110px;
+      width: 115px;
       height: 35px;
       padding-left: 10px;
       margin-right: 1px;
