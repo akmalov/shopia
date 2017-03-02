@@ -1,0 +1,81 @@
+.summer {
+  width: 100%;
+  margin-bottom: 90px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__header {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px 15px 0;
+    border: 1px solid #eaeaea;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 300px;
+    height: 348px;
+    margin-right: 18px;
+    margin-bottom: 15px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  &__discount {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 60px;
+    height: 60px;
+    padding: 20px 0 0 15px;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+    background: #feab12;
+    border-radius: 50%;
+
+    &-percent {
+      font-size: 11px;
+      line-height: 1.64;
+    }
+  }
+
+  &__btn {
+    width: 198px;
+    height: 44px;
+    padding-top: 18px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+    background: url("../img/bg/summer-black.png") center center / cover no-repeat;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &_orange {
+      background-image: url("../img/bg/summer-orange.png");
+    }
+  }
+}
