@@ -1,0 +1,255 @@
+.footer {
+  width: 100%;
+  background: #141414;
+
+  &__top {
+    width: 100%;
+    min-height: 448px;
+
+    .container {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      min-height: 448px;
+      padding: 60px 0 50px 7px;
+      border-bottom: 1px solid #363636;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -18px;
+        left: 633px;
+        border: 12px solid transparent;
+        border-bottom-width: 9px;
+        border-top: 9px solid #363636;
+      }
+    }
+  }
+
+  &__shops, &__information, &__service, &__communication {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__title, &__link {
+    line-height: 1.875;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    word-spacing: 2px;
+
+    &-italic-span {
+      font-style: italic;
+      font-weight: 400;
+      text-transform: lowercase;
+    }
+  }
+
+  &__item {
+    margin-bottom: 4px;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: #6a6a6a;
+  }
+
+  &__shops {
+    width: 160px;
+    margin-right: 100px;
+  }
+
+  &__information {
+    width: 130px;
+    margin-right: 100px;
+  }
+
+  &__service {
+    width: 165px;
+    margin-right: 130px;
+  }
+
+  &__communication {
+    width: 370px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 0 4px;
+
+    &-item {
+      margin: 0 15px 15px 0;
+    }
+
+    &-link, &-sign {
+      color: #141414;
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #fff;
+
+      &:hover {
+        background: darken(#fff, 10%);
+      }
+    }
+
+    &-sign {
+      font-size: 24px;
+    }
+  }
+
+  .subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 362px;
+    padding-right: 3px;
+    background: #141414;
+    border: 1px solid #484848;
+
+    &__email, &__submit {
+      font-size: 12px;
+      line-height: 2.5;
+    }
+
+    &__email {
+      width: 256px;
+      height: 40px;
+      padding: 0 30px 0 22px;
+      color: #6a6a6a;
+      background: #141414;
+      border: 1px solid #141414;
+    }
+
+    &__submit {
+      height: 33px;
+      padding: 0 15px 0 22px;
+      color: #fff;
+      border: 1px solid #323030;
+      background: #323030;
+      text-transform: uppercase;
+
+      &:hover {
+        background: darken(#323030, 10%);
+      }
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    width: 100%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #000;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      min-height: 247px;
+      padding: 25px 3px 60px 0;
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    &-btn-up {
+      margin-top: 20px;
+    }
+  }
+
+  &__copyright {
+    max-width: 430px;
+    margin-bottom: 25px;
+    font-size: 11px;
+    line-height: 1.64;
+    color: #363636;
+  }
+
+  &__pay-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 5px;
+  }
+
+  &__pay-icon {
+    margin-right: 25px;
+    background-image: url("../img/icons/footer.png");
+    background-repeat: no-repeat;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &_visa {
+      width: 20px;
+      height: 6px;
+      background-position: -213px -20px;
+    }
+
+    &_mastercard {
+      width: 24px;
+      height: 14px;
+      background-position: -149px -20px;
+    }
+
+    &_american-express {
+      width: 20px;
+      height: 20px;
+      background-position: -20px -20px;
+    }
+
+    &_discover {
+      width: 29px;
+      height: 14px;
+      background-position: -80px -20px;
+    }
+  }
+
+  .btn-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background: #090909;
+    cursor: pointer;
+
+    &:hover {
+      background: #000;
+    }
+  }
+}
