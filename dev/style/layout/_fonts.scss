@@ -45,3 +45,15 @@
   font-weight: 400;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot');
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff') format('woff'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg'),
+  url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: 700;
+  font-style: italic;
+}
